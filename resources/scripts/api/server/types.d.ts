@@ -23,7 +23,7 @@ export interface ServerEggVariable {
     description: string;
     envVariable: string;
     defaultValue: string;
-    serverValue: string | null;
+    serverValue: string;
     isEditable: boolean;
     rules: string[];
 }

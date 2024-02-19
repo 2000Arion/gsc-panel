@@ -47,7 +47,7 @@
             "default_value": "vanilla",
             "user_viewable": true,
             "user_editable": true,
-            "rules": "required|in:vanilla,oxide,carbon",
+            "rules": "required|in:carbon,oxide,vanilla",
             "field_type": "text"
         },
         {
