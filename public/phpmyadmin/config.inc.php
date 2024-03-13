@@ -27,9 +27,14 @@ $i++;
 /* Authentication type */
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
 /* Server parameters */
-$cfg['Servers'][$i]['host'] = 'main.nodes.arion2000.xyz:3309';
+$cfg['Servers'][$i]['host'] = 'db1.servers.com.de';
+$cfg['Servers'][$i]['port'] = '3306';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+/**
+ * End of servers configuration
+ */
 
 /**
  * phpMyAdmin configuration storage settings.
