@@ -32,6 +32,9 @@ $cfg['Servers'][$i]['port'] = '3306';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
 
+
+$cfg['NavigationLogoLink'] = 'https://panel.arion2000.xyz';
+$cfg['NavigationLogoLinkWindow'] = 'new';
 /**
  * End of servers configuration
  */

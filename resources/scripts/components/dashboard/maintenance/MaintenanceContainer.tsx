@@ -9,11 +9,11 @@ export default () => {
         return new Date(inputDate.toDateString()) >= new Date(new Date().toDateString());
     }
 
-    if (validateDate(2024, 3, 15)) {
+    if (validateDate(2024, 5, 26)) {
         return (
             <>
                 <Tooltip placement={'bottom'} content={'Geplante Wartungsarbeiten'}>
-                    <div className={'navigation-link'} onClick={() => window.open('https://status.arion2000.xyz/incident/845027', '_blank')}>
+                    <div className={'navigation-link'} onClick={() => window.open('https://status.arion2000.xyz/incident/932575', '_blank')}>
                         <FontAwesomeIcon icon={faExclamationTriangle} />
                     </div>
                 </Tooltip>
