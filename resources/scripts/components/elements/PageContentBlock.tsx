@@ -24,18 +24,41 @@ const PageContentBlock: React.FC<PageContentBlockProps> = ({ title, showFlashKey
                     {showFlashKey && <FlashMessageRender byKey={showFlashKey} css={tw`mb-4`} />}
                     {children}
                 </ContentContainer>
-                <ContentContainer css={tw`mb-4`}>
-                    <p css={tw`text-center text-neutral-500 text-xs`}>
+                <ContentContainer css={tw`mb-4 flex justify-between items-center`}>
+                    <div css={tw`flex items-center text-[#606d7b] xs:hidden`}>
                         <a
                             rel={'noopener nofollow noreferrer'}
-                            href={'https://arion2000.xyz'}
+                            href={'https://www.arion2000.xyz'}
+                            target={'_blank'}
+                            css={tw`transition-opacity duration-300 ease-in-out`}
+                        >
+                            <img
+                                src={'https://img.arion2000.xyz/r/a2data_logo_white_large.png'}
+                                alt={'a2data logo'}
+                                css={tw`h-6 opacity-40 hover:opacity-100 grayscale transition-all duration-300 ease-in-out hover:grayscale-0`}
+                            />
+                        </a>
+                        <span css={tw`ml-2`}>&copy; {new Date().getFullYear()}</span>
+                    </div>
+                    <div css={tw`text-neutral-500 text-xs`}>
+                        <a
+                            rel={'noopener nofollow noreferrer'}
+                            href={'https://mc.a2data.site/legal/imprint'}
                             target={'_blank'}
                             css={tw`no-underline text-neutral-500 hover:text-neutral-300`}
                         >
-                            a2data
+                            Impressum
                         </a>
-                        &nbsp;- {new Date().getFullYear()}
-                    </p>
+                        <span css={tw`mx-2`}>-</span>
+                        <a
+                            rel={'noopener nofollow noreferrer'}
+                            href={'https://mc.a2data.site/legal/privacy'}
+                            target={'_blank'}
+                            css={tw`no-underline text-neutral-500 hover:text-neutral-300`}
+                        >
+                            Datenschutz
+                        </a>
+                    </div>
                 </ContentContainer>
             </>
         </CSSTransition>

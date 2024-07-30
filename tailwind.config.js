@@ -19,6 +19,9 @@ module.exports = {
     ],
     theme: {
         extend: {
+            screens: {
+                'xs': {'max': '350px'},
+            },
             fontFamily: {
                 header: ['"IBM Plex Sans"', '"Roboto"', 'system-ui', 'sans-serif'],
             },
@@ -42,6 +45,7 @@ module.exports = {
             }),
         },
     },
+    variants: {},
     plugins: [
         require('@tailwindcss/line-clamp'),
         require('@tailwindcss/forms')({
