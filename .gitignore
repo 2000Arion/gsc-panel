@@ -35,4 +35,4 @@ resources/lang/locales.js
 result
 docker-compose.yaml
 
-/public/phpmyadmin/tmp
+/public/phpmyadmin
