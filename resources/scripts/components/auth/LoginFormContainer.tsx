@@ -56,6 +56,7 @@ export default forwardRef<HTMLFormElement, Props>(
       <div
         css={tw`flex items-center justify-center text-[#606d7b] xs:hidden mt-4`}
       >
+        <span css={tw`ml-2`}>&copy; {new Date().getFullYear()}&nbsp;</span>
         <a
           rel={"noopener nofollow noreferrer"}
           href={"https://www.arion2000.xyz"}
@@ -63,12 +64,11 @@ export default forwardRef<HTMLFormElement, Props>(
           css={tw`transition-opacity duration-300 ease-in-out`}
         >
           <img
-            src={"https://img.arion2000.xyz/r/a2data_logo_white_large.png"}
+            src={"/assets/img/footer_copyright_watermark.png"}
             alt={"a2data logo"}
             css={tw`h-8 opacity-40 hover:opacity-100 grayscale transition-all duration-300 ease-in-out hover:grayscale-0`}
           />
         </a>
-        <span css={tw`ml-2`}>&copy; {new Date().getFullYear()}</span>
       </div>
     </Container>
   )
