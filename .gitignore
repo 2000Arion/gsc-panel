@@ -36,3 +36,4 @@ result
 docker-compose.yaml
 
 /public/phpmyadmin/tmp
+/public/phpmyadmin/config.inc.php
