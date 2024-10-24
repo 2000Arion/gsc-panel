@@ -25,7 +25,7 @@ const PageContentBlock: React.FC<PageContentBlockProps> = ({ title, showFlashKey
                     {children}
                 </ContentContainer>
                 <ContentContainer css={tw`mb-4 flex justify-between items-center`}>
-                    <div css={tw`flex items-center text-[#606d7b] xs:hidden`}>
+                    <div css={tw`flex items-center text-[#606d7b] xs2:hidden`}>
                         <a
                             rel={'noopener nofollow noreferrer'}
                             href={'https://www.arion2000.xyz'}
@@ -41,6 +41,15 @@ const PageContentBlock: React.FC<PageContentBlockProps> = ({ title, showFlashKey
                         <span css={tw`ml-2`}>&copy; {new Date().getFullYear()}</span>
                     </div>
                     <div css={tw`text-neutral-500 text-xs`}>
+                        <a
+                            rel={'noopener nofollow noreferrer'}
+                            href={'https://status.arion2000.xyz/?ref=panel.arion2000.xyz&utm=62afe015-b024-41fc-9b55-41ec9a340ea6'}
+                            target={'_blank'}
+                            css={tw`no-underline text-neutral-500 hover:text-neutral-300`}
+                        >
+                            Status
+                        </a>
+                        <span css={tw`mx-2`}>-</span>
                         <a
                             rel={'noopener nofollow noreferrer'}
                             href={'https://mc.a2data.site/legal/imprint'}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExclamationTriangle, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import Tooltip from '@/components/elements/tooltip/Tooltip';
 
 export default () => {
@@ -9,12 +9,12 @@ export default () => {
         return new Date(inputDate.toDateString()) >= new Date(new Date().toDateString());
     }
 
-    if (validateDate(2024, 9, 12)) {
+    if (validateDate(2024, 10, 12)) {
         return (
             <>
                 <Tooltip placement={'bottom'} content={'Geplante Wartungsarbeiten'}>
-                    <div className={'navigation-link'} onClick={() => window.open('https://status.arion2000.xyz/incident/958101', '_blank')}>
-                        <FontAwesomeIcon icon={faExclamationTriangle} />
+                    <div className={'navigation-link'} onClick={() => window.open('https://status.arion2000.xyz/incident/962664', '_blank')}>
+                        <FontAwesomeIcon icon={faBell} />
                     </div>
                 </Tooltip>
             </>

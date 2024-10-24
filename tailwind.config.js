@@ -21,6 +21,7 @@ module.exports = {
         extend: {
             screens: {
                 'xs': {'max': '350px'},
+                'xs2': {'max': '400px'},
             },
             fontFamily: {
                 header: ['"IBM Plex Sans"', '"Roboto"', 'system-ui', 'sans-serif'],
