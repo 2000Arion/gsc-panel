@@ -9,11 +9,11 @@ export default () => {
         return new Date(inputDate.toDateString()) >= new Date(new Date().toDateString());
     }
 
-    if (validateDate(2025, 2, 9)) {
+    if (validateDate(2026, 1, 17)) {
         return (
             <>
                 <Tooltip placement={'bottom'} content={'Geplante Wartungsarbeiten'}>
-                    <div className={'navigation-link'} onClick={() => window.open('https://status.arion2000.xyz/incident/1103639', '_blank')}>
+                    <div className={'navigation-link'} onClick={() => window.open('https://status.arion2000.xyz/incident/1530368', '_blank')}>
                         <FontAwesomeIcon icon={faBell} />
                     </div>
                 </Tooltip>
@@ -22,7 +22,7 @@ export default () => {
     } else {
         return (
             <>
-                <Tooltip placement={'bottom'} content={'Hilfe'}>
+                <Tooltip placement={'bottom'} content={'Wiki/Support'}>
                     <div className={'navigation-link'} onClick={() => window.open('https://wiki.arion2000.xyz', '_blank')}>
                         <FontAwesomeIcon icon={faQuestionCircle} />
                     </div>
