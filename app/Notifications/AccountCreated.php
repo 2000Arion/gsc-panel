@@ -34,7 +34,7 @@ class AccountCreated extends Notification implements ShouldQueue
     {
         $message = (new MailMessage())
             ->greeting('Hallo ' . $this->user->name . '!')
-            ->line('Du erhältst diese E-Mail, weil für dich ein Account im Arion2000.xyz Gameservers Panel erstellt wurde.')
+            ->line('Du erhältst diese E-Mail, weil für dich ein Account im ' . config('app.name') . ' Panel erstellt wurde.')
             ->line('Benutzername: ' . $this->user->username)
             ->line('E-Mail: ' . $this->user->email);
 
