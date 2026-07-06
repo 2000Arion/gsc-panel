@@ -35,6 +35,6 @@ class SendPasswordReset extends Notification implements ShouldQueue
             ->subject('Passwort zurücksetzen')
             ->line('Du erhältst diese E-Mail, weil wir eine Anfrage zum Zurücksetzen des Passworts für deinen Account erhalten haben.')
             ->action('Passwort zurücksetzen', url('/auth/password/reset/' . $this->token . '?email=' . urlencode($notifiable->email)))
-            ->line('Wenn du keine Zurücksetzungs des Passworts beantragt hast, sind keine weiteren Schritte erforderlich.');
+            ->line('Wenn du keine Passwortzurücksetzung angefordert hast, ist keine weitere Aktion erforderlich.');
     }
 }

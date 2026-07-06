@@ -36,7 +36,7 @@ class AddedToServer extends Notification implements ShouldQueue
     {
         return (new MailMessage())
             ->greeting('Hallo ' . $this->server->user . '!')
-            ->line('Du wurdest als Unterbenutzer für den folgenden Server hinzugefügt, wodurch du ab jetzt eine gewisse Kontrolle über den Server hast.')
+            ->line('Du wurdest als Unterbenutzer für den folgenden Server hinzugefügt, wodurch du ab jetzt bestimmte Kontrollrechte über den Server hast.')
             ->line('Servername: ' . $this->server->name)
             ->action('Panel aufrufen', url('/server/' . $this->server->uuidShort));
     }
