@@ -36,7 +36,7 @@ class AccountCreated extends Notification implements ShouldQueue
             ->greeting('Hallo ' . $this->user->name . '!')
             ->line('Du erhältst diese E-Mail, weil für dich ein Account im ' . config('app.name') . ' Panel erstellt wurde.')
             ->line('Benutzername: ' . $this->user->username)
-            ->line('E-Mail: ' . $this->user->email);
+            ->line('E-Mail-Adresse: ' . $this->user->email);
 
         if (!is_null($this->token)) {
             return $message->action('Account einrichten', url('/auth/password/reset/' . $this->token . '?email=' . urlencode($this->user->email)));
