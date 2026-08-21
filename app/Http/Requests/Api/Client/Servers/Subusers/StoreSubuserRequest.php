@@ -2,6 +2,7 @@
 
 namespace Pterodactyl\Http\Requests\Api\Client\Servers\Subusers;
 
+use Pterodactyl\Rules\UserEmail;
 use Pterodactyl\Models\Permission;
 
 class StoreSubuserRequest extends SubuserRequest
